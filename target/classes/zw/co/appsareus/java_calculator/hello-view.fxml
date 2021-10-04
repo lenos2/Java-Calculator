@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="325.0" prefWidth="329.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zw.co.appsareus.java_calculator.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <TextField fx:id="tfWorkArea" alignment="CENTER_RIGHT" text="0">
+      <font>
+         <Font size="44.0" />
+      </font>
+      <padding>
+         <Insets left="10.0" right="10.0" />
+      </padding>
+    </TextField>
+    <HBox alignment="CENTER">
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onClear" prefHeight="40.0" prefWidth="60.0" text="C">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onAddToMemory" prefHeight="40.0" prefWidth="60.0" text="M">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onMemoryRecall" prefHeight="40.0" prefWidth="60.0" text="MR">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onSelectOperator" prefHeight="40.0" prefWidth="60.0" text="X">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+    </HBox>
+    <HBox alignment="CENTER">
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="40.0" prefWidth="60.0" text="7">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="40.0" prefWidth="60.0" text="8">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="40.0" prefWidth="60.0" text="9">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onSelectOperator" prefHeight="40.0" prefWidth="60.0" text="/">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+    </HBox>
+    <HBox alignment="CENTER">
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="40.0" prefWidth="60.0" text="4">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="40.0" prefWidth="60.0" text="5">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="40.0" prefWidth="60.0" text="6">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onSelectOperator" prefHeight="40.0" prefWidth="60.0" text="-">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+    </HBox>
+    <HBox alignment="CENTER">
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="40.0" prefWidth="60.0" text="1">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="40.0" prefWidth="60.0" text="2">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="40.0" prefWidth="60.0" text="3">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onSelectOperator" prefHeight="40.0" prefWidth="60.0" text="+">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+    </HBox>
+    <HBox alignment="CENTER">
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onNegate" prefHeight="40.0" prefWidth="60.0" text="+/-">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="40.0" prefWidth="60.0" text="0">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="40.0" prefWidth="60.0" text=".">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onEquals" prefHeight="40.0" prefWidth="60.0" text="=">
+            <HBox.margin>
+                <Insets left="2.0" right="2.0" />
+            </HBox.margin></Button>
+    </HBox>
+</VBox>
